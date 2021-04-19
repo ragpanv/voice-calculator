@@ -91,6 +91,7 @@ body{
 	border-color:transparent #dddddd transparent transparent;
 	left: 0;
 	margin-left: -10px;
+	visibility:hidden;
 }
 #output-microphone:hover .tooltip{
 	visibility: visible;
@@ -99,7 +100,7 @@ body{
 #keyboard{
 	height: 400px;
 }
-.operator, .number, .number1, .empty{
+.operator, .number, .empty{
 	width: 50px;
 	height: 50px;
 	margin: 15px;
@@ -109,16 +110,16 @@ body{
 	font-weight: bold;
 	font-size: 15px;
 }
-.number, .number1, .empty{
+.number, .empty{
 	background-color: white;
 }
-.number,.number1, .operator{
+.number, .operator{
 	cursor: pointer;
 }
-.operator:active,.number1:active .number:active{
+.operator:active, .number:active{
 	font-size: 13px;
 }
-.operator:focus,.number1:focus .number:focus, .empty:focus{
+.operator:focus,.number:focus, .empty:focus{
 	outline: 0;
 }
 button:nth-child(4){
@@ -141,3 +142,4 @@ button:nth-child(20){
 	font-size: 20px;
 	background-color: #6F1E51;
 }
+
